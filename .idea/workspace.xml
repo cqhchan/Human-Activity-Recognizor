@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c0f8531e-e90a-482b-b1d6-a76245da11a7" name="Default" comment="">
+
       <change beforePath="$PROJECT_DIR$/.idea/RNN_assignment CG3002.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/RNN_assignment CG3002.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -30,6 +31,7 @@
       <find>tBodyAccMean</find>
       <find>gra</find>
       <find>acc</find>
+      <find>svmlinear</find>
     </findStrings>
     <replaceStrings>
       <replace>,</replace>
@@ -47,6 +49,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="G:\tensorflow1\RNN_assignment CG3002\Dataset1\Raw" />
+      <recent name="G:\tensorflow1\RNN_assignment CG3002\Dataset1" />
       <recent name="G:\tensorflow1\RNN_assignment CG3002" />
     </key>
   </component>

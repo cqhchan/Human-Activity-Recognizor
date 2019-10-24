@@ -19,7 +19,7 @@ processedLabel = np.load(processedLabelFile)
 print(processedWindowDataSet.shape)
 print(processedLabel.shape)
 
-testCount = int(processedLabel.shape[0]*0.3)
+testCount = int(processedLabel.shape[0]*0)
 
 mask = np.zeros((processedLabel.shape[0]),dtype=bool)
 
@@ -48,5 +48,5 @@ print(trainLabels.shape)
 np.save(os.path.join(outputFilePath, "train", "train_data" ), trainDataSet,allow_pickle=True)
 np.save(os.path.join(outputFilePath, "train", "train_label" ), trainLabels,allow_pickle=True)
 
-np.save(os.path.join(outputFilePath, "test", "test_data" ), testDataSet,allow_pickle=True)
-np.save(os.path.join(outputFilePath, "test", "test_label" ), testLabels,allow_pickle=True)
+# np.save(os.path.join(outputFilePath, "test", "test_data" ), testDataSet,allow_pickle=True)
+# np.save(os.path.join(outputFilePath, "test", "test_label" ), testLabels,allow_pickle=True)
