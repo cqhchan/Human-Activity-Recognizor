@@ -2,11 +2,19 @@ import numpy as np
 from statsmodels import regression
 from statsmodels import robust
 from scipy import stats
+from scipy.integrate import simps
 
 # require time domain values i.e. 't' prefix on filename
 def mean(array):
     return np.mean(array)
 
+def totalabs(arrayx, arrayy,arrayz):
+
+
+
+    total = np.sqrt(pow(arrayx,2) +pow(arrayy,2)+pow(arrayz,2) )
+
+    return np.sum(total)
 
 def std(array):
     return np.std(array)
@@ -23,6 +31,12 @@ def max(array):
 def min(array):
     return np.min(array)
 
+
+def areatrapz(array):
+    return np.trapz(array)
+
+def areasimps(array):
+    return simps(array)
 
 def sma(array_x, array_y, array_z):
     sum = 0

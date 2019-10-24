@@ -14,8 +14,6 @@ rawWindowDataSet = np.load(rawFile)
 processedDataSet = []
 print(rawWindowDataSet.shape)
 
-print(rawWindowDataSet[1339])
-
 for windowIndex in range(rawWindowDataSet.shape[0]):
     rawWindowData = rawWindowDataSet[windowIndex]
 
@@ -33,6 +31,8 @@ for windowIndex in range(rawWindowDataSet.shape[0]):
         processedData.append(max(sensorData))
         processedData.append(min(sensorData))
         processedData.append(energy(sensorData))
+        #processedData.append(areasimps(sensorData))
+        #processedData.append(areatrapz(sensorData))
 
 
 
@@ -68,6 +68,9 @@ for windowIndex in range(rawWindowDataSet.shape[0]):
         kurtosisf = kurtosis(fSensorData)
         processedData.append(kurtosisf.real+ kurtosisf.imag)
 
+    #processedData.append(totalabs(rawWindowData[:][0],rawWindowData[:][1],rawWindowData[:][2]))
+    #processedData.append(totalabs(rawWindowData[:][6],rawWindowData[:][7],rawWindowData[:][8]))
+    #processedData.append(totalabs(rawWindowData[:][12],rawWindowData[:][13],rawWindowData[:][14]))
 
     processedData.append(sma(rawWindowData[:][0],rawWindowData[:][1],rawWindowData[:][2]))
     processedData.append(sma(rawWindowData[:][3],rawWindowData[:][4],rawWindowData[:][5]))

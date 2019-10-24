@@ -9,9 +9,9 @@ def addDataFromFile(windowData, windowLabel, path, filenameInput):
     data = []
     label = int(filenameInput[0])
     timePerData = 50/1000 # 50 Milliseconds
-    windowDuration = 3 # 3 seconds
+    windowDuration = 2 # 3 seconds
     dataPerWindow = int (windowDuration / timePerData)
-    overlap = 0.15;
+    overlap = 0.3;
     for dataString in f:
 
       #  str = "0.41,-0.04,0.18,-22.39,-17.73,-13.47|0.08,0.11,1.00,13.48,19.89,28.49|0.08,-0.11,
