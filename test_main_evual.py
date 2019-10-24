@@ -125,10 +125,10 @@ def load_dataset_group(group, prefix=''):
 # load the dataset, returns train and test X and y elements
 def load_dataset(prefix=''):
 	# load all train
-	trainX, trainy = load_dataset_group('train', prefix + 'HARDataset/')
+	trainX, trainy = load_dataset_group('train', prefix + 'Test_HARDataset/')
 	print(trainX.shape, trainy.shape)
 	# load all test
-	testX, testy = load_dataset_group('test', prefix + 'HARDataset/')
+	testX, testy = load_dataset_group('test', prefix + 'Test_HARDataset/')
 	print(testX.shape, testy.shape)
 	# flatten y
 	trainy, testy = trainy[:,0], testy[:,0]
