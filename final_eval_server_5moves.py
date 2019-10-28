@@ -24,12 +24,35 @@ import numpy as np
 
 import pandas as pd
 
-
+import base64
+from Crypto.Cipher import AES
+from Crypto import Random
 
 from server_auth import server_auth
+import base64
+import socket
+import sys
+from preprocess import *
+import threading
+import time
+from scipy import fft
+import pickle
+bs = 32; #base_size
 
+def pad(var1):
+    #var1 = var1 + (bs - (len(var1) % bs)) * ' '
+    #var1 = var1.encode('utf-8') + (bs - (len(va
+    #print("data size:" + str(len(var1)))
+    #return var1
+    return var1 + (bs - len(var1)%bs)*chr(bs - len(var1)%bs)
 
-
+def encryptText(plainText, key):
+    raw = pad(plainText)
+    iv = Random.new().read(AES.block_size)
+    cipher = AES.new(key.encode("utf8"),AES.MODE_CBC,iv)
+    msg = iv + cipher.encrypt(raw.encode('utf8'))
+    # msg = msg.strip()
+    return base64.b64encode(msg)
 
 
 class Server(threading.Thread):
@@ -120,7 +143,11 @@ class Server(threading.Thread):
 
         random.shuffle(self.indices)
 
-
+        # dummy = "#BlaBla".strip()
+        # print(dummy)
+        # key = "1234567890123456"
+        # test = encryptText(dummy, key)
+        # decodedmsg = self.auth.decryptText(test, key)
 
         self.timer = threading.Timer(self.timeout, self.get_action)
 
@@ -169,12 +196,18 @@ class Server(threading.Thread):
             if data:
 
                 try:
-
+                    # dummy = "BlaBla"
+                    # print(dummy)
                     msg = data.decode("utf8")
+                    # print(msg)
+
+                    # dummy_msg = dummy.encode("utf8")
+                    # print(dummy_msg)
+                    # msg = dummy_msg.decode("utf8")
 
                     decodedmsg = self.auth.decryptText(msg, secret_key)
 
-
+                    print(decodedmsg)
 
                     if decodedmsg['action'] == "logout":
 

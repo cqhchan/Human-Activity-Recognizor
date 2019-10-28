@@ -9,7 +9,7 @@ class server_auth:
 
     def decryptText(self, cipherText, Key):
         decodedMSG = base64.b64decode(cipherText)
-        #print(decodedMSG)
+        print(decodedMSG)
         iv = decodedMSG[:16]
         #print(iv)
         secret_key = bytes(str(Key), encoding = "utf8")
@@ -19,6 +19,11 @@ class server_auth:
         decryptedTextStr = decryptedText.decode('utf8')
         decryptedTextStr1 = decryptedTextStr[decryptedTextStr.find('#'):] 
         decryptedTextFinal = bytes(decryptedTextStr1[1:],'utf8').decode('utf8')
+        print("Testing123")
+        print(decryptedText)
+        print(decryptedTextStr)
+        print(decryptedTextStr1)
+        print(decryptedTextFinal)
         action = decryptedTextFinal.split('|')[0]
         voltage = decryptedTextFinal.split('|')[1]
         current = decryptedTextFinal.split('|')[2]

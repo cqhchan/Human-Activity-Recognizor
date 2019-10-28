@@ -94,6 +94,8 @@ def run_experiment(repeats=10):
 	# repeat experiment
 	scores = list()
 	for r in range(repeats):
+
+		print(trainX.shape)
 		score = evaluate_model(trainX, trainy, testX, testy)
 		score = score * 100.0
 		print('>#%d: %.3f' % (r+1, score))

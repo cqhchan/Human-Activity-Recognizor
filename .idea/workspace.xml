@@ -2,11 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c0f8531e-e90a-482b-b1d6-a76245da11a7" name="Default" comment="">
-
-      <change beforePath="$PROJECT_DIR$/.idea/RNN_assignment CG3002.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/RNN_assignment CG3002.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/final_eval_server_5moves.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main_pi.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server_auth.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset1/Data/test/test_data.npy" beforeDir="false" afterPath="$PROJECT_DIR$/Dataset1/Data/test/test_data.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset1/Data/test/test_label.npy" beforeDir="false" afterPath="$PROJECT_DIR$/Dataset1/Data/test/test_label.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset1/Data/train/train_data.npy" beforeDir="false" afterPath="$PROJECT_DIR$/Dataset1/Data/train/train_data.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset1/Data/train/train_label.npy" beforeDir="false" afterPath="$PROJECT_DIR$/Dataset1/Data/train/train_label.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset1/Raw/3_val_tapshoulders.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Dataset1/Raw/3_val_tapshoulders.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset1/Raw/4_val_rocket.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Dataset1/Raw/4_val_rocket.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset1/Raw/Extra/0_eric_idle.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset1/Raw/Extra/1_eric_handmotor.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset1/Raw/Extra/2_eric_bunny.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset1/Raw/Extra/3_eric_tapshoulders.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset1/Raw/Extra/4_eric_rocket.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset1/Raw/Extra/5_eric_cowboy.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset1/Windowed/Extra/ProcessedWindowedData.npy" beforeDir="false" afterPath="$PROJECT_DIR$/Dataset1/Windowed/Extra/ProcessedWindowedData.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset1/Windowed/Extra/RawWindowedData.npy" beforeDir="false" afterPath="$PROJECT_DIR$/Dataset1/Windowed/Extra/RawWindowedData.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset1/Windowed/Extra/WindowedLabels.npy" beforeDir="false" afterPath="$PROJECT_DIR$/Dataset1/Windowed/Extra/WindowedLabels.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset1/Windowed/Extra/WindowedLabelsReadable.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Dataset1/Windowed/Extra/WindowedLabelsReadable.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset1/Windowed/ProcessedWindowedData.npy" beforeDir="false" afterPath="$PROJECT_DIR$/Dataset1/Windowed/ProcessedWindowedData.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset1/Windowed/RawWindowedData.npy" beforeDir="false" afterPath="$PROJECT_DIR$/Dataset1/Windowed/RawWindowedData.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset1/Windowed/WindowedLabels.npy" beforeDir="false" afterPath="$PROJECT_DIR$/Dataset1/Windowed/WindowedLabels.npy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dataset1/Windowed/WindowedLabelsReadable.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Dataset1/Windowed/WindowedLabelsReadable.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Split_Data.py" beforeDir="false" afterPath="$PROJECT_DIR$/Split_Data.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/evaluate.py" beforeDir="false" afterPath="$PROJECT_DIR$/evaluate.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_main.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_main.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,22 +45,6 @@
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>load_file</find>
-      <find>load_dataset_group</find>
-      <find>trainX.shape</find>
-      <find>, ,</find>
-      <find>gravity</find>
-      <find>tBodyAccMean</find>
-      <find>gra</find>
-      <find>acc</find>
-      <find>svmlinear</find>
-    </findStrings>
-    <replaceStrings>
-      <replace>,</replace>
-    </replaceStrings>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -49,6 +57,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="G:\tensorflow1\RNN_assignment CG3002\Dataset1\Raw" />
       <recent name="G:\tensorflow1\RNN_assignment CG3002\Dataset1" />
       <recent name="G:\tensorflow1\RNN_assignment CG3002" />
